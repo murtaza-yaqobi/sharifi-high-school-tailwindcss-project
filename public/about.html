@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="../src/output.css" />
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <!-- Header -->
+      <header
+        class="bg-blue-700 w-full z-50 text-white shadow-md fixed top-0 right-0"
+      >
+        <div
+          class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
+        >
+          <h1 class="text-xl font-bold" title="Sharifi High School">
+            Sharifi High School
+          </h1>
+          <nav class="hidden md:flex space-x-6">
+            <a href="#home" class="hover:underline">Home</a>
+            <a href="#about" class="hover:underline">About</a>
+            <a href="#courses" class="hover:underline">Courses</a>
+            <a href="#classes" class="hover:underline">Classes</a>
+            <a href="#contact" class="hover:underline">Contact</a>
+            <a href="#user"><i class="fas fa-user-circle text-[30px]"></i></a>
+          </nav>
+          <button id="menu-btn" class="md:hidden focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </header>
+      <div
+        id="mobile-menu"
+        class="hidden h-screen w-[20%] bg-blue-700 text-white fixed top-0 left-0 pt-16"
+      >
+        <ul class="pl-7 pt-7">
+          <li>
+            <a href="#user"
+              ><i class="pl-8 fas fa-user-circle text-4xl" title="User"></i
+            ></a>
+            <h4 class="ml-8">User</h4>
+          </li>
+          <li>
+            <a href="#home" class="block py-2 hover:underline">Home</a>
+          </li>
+          <li><a href="#about" class="block py-2 hover:underline">About</a></li>
+          <li>
+            <a href="#courses" class="block py-2 hover:underline">Courses</a>
+          </li>
+          <li>
+            <a href="#classes" class="block py-2 hover:underline">Classes</a>
+          </li>
+          <li>
+            <a href="#contact" class="block py-2 hover:underline">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- about section start -->
+      <div class="py-16 bg-blue-50 h-screen">
+        <div class="flex justify-center">
+          <h1 class="text-3xl font-medium mt-3">————— About Us —————</h1>
+        </div>
+
+        <!-- <div class="flex justify-between w-[100%]">
+          <div
+            class="px-14 before:content-['\1F441'] before:text-black before:w-full before:h-full relative before:absolute before:z-50 before:text-3xl before:top-[90%] before:left-[50%] before:translate-[-50%] before:hidden hover:opacity-20 hover:before:opacity-100 hover:before:block"
+          >
+            <a class="w-96 h-96" href="../public/images/school.JPG"
+              ><img
+                src="../public/images/school.JPG"
+                alt="school"
+                class="h-96 rounded-[4px] mt-[30px]"
+            /></a>
+          </div>
+          <p class="mt-[50px] ml-[18px]">
+            Sharifi High School is a premier school committed to academic
+            excellence and personal growth. Our mission is to nurture
+            creativity, curiosity, and lifelong learning in every student.
+            Sharifi High School is a premier school committed to academic
+            excellence and personal growth. Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Quae at, excepturi corrupti sint
+            provident quod quasi alias fugit numquam nulla quia fuga nemo iusto
+            accusamus, delectus ipsum quis, animi dolor?
+          </p>
+        </div> -->
+      </div>
+    </section>
+  </body>
+</html>

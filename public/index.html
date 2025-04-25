@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sharifi High School</title>
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body class="font-semibold text-gray-800">
+    <!-- our project with tailwindcss and javascript start for sharifi high school -->
+    <!-- Header start-->
+    <header
+      class="bg-blue-700 w-full z-50 text-white shadow-md fixed top-0 right-0"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-xl font-bold" title="Sharifi High School">
+          Sharifi High School
+        </h1>
+        <nav class="hidden md:flex space-x-6">
+          <a href="#home" class="hover:underline">Home</a>
+          <a href="#about" class="hover:underline">About</a>
+          <a href="#courses" class="hover:underline">Courses</a>
+          <a href="#classes" class="hover:underline">Classes</a>
+          <a href="#contact" class="hover:underline">Contact</a>
+          <a href="#user"><i class="fas fa-user-circle text-[30px]"></i></a>
+        </nav>
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </header>
+    <div
+      id="mobile-menu"
+      class="hidden h-screen w-[20%] bg-blue-700 text-white fixed top-0 left-0 pt-16"
+    >
+      <ul class="pl-7 pt-7">
+        <li>
+          <a href="#user"
+            ><i class="pl-8 fas fa-user-circle text-4xl" title="User"></i
+          ></a>
+          <h4 class="ml-8">User</h4>
+        </li>
+        <li>
+          <a href="#home" class="block py-2 hover:underline">Home</a>
+        </li>
+        <li><a href="#about" class="block py-2 hover:underline">About</a></li>
+        <li>
+          <a href="#courses" class="block py-2 hover:underline">Courses</a>
+        </li>
+        <li>
+          <a href="#classes" class="block py-2 hover:underline">Classes</a>
+        </li>
+        <li>
+          <a href="#contact" class="block py-2 hover:underline">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-blue-50 py-[80px]">
+      <div class="max-w-6xl mx-auto text-center px-4">
+        <h2 class="text-4xl font-bold text-blue-800 mb-4">
+          Welcome to Sharifi High School
+        </h2>
+        <p class="text-lg text-gray-600 mb-6">
+          Empowering students through quality education
+        </p>
+        <a
+          href="#courses"
+          class="bg-blue-700 text-white px-6 py-3 rounded hover:bg-blue-800 transition"
+          >Explore Courses</a
+        >
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-semibold mb-4">About Us</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Sharifi High School is a premier school committed to academic
+          excellence and personal growth. Our mission is to nurture creativity,
+          curiosity, and lifelong learning in every student. Sharifi High School
+          is a premier school committed to academic excellence and personal
+          growth.
+        </p>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-16 bg-blue-50">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-semibold mb-10">Our Courses</h3>
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="bg-white p-6 rounded shadow hover:shadow-lg">
+            <h4 class="text-xl font-bold mb-2">Computer</h4>
+            <p class="text-gray-600">
+              Computer lab for office packge programming and more.
+            </p>
+            <div class="float-right mt-2.5">
+              <button class="like-btn">🤍</button>
+              <span class="like-count">0</span>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded shadow hover:shadow-lg">
+            <h4 class="text-xl font-bold mb-2">Mathematics</h4>
+            <p class="text-gray-600">
+              Problem-solving with real-world applications.
+            </p>
+            <div class="float-right mt-2.5">
+              <button class="like-btn">🤍</button>
+              <span class="like-count">0</span>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded shadow hover:shadow-lg">
+            <h4 class="text-xl font-bold mb-2">Languages</h4>
+            <p class="text-gray-600">
+              Courses in English, Spanish, French and more.
+            </p>
+            <div class="float-right mt-2.5">
+              <button class="like-btn">🤍</button>
+              <span class="like-count">0</span>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded shadow hover:shadow-lg">
+            <h4 class="text-xl font-bold mb-2">Art</h4>
+            <p class="text-gray-600">
+              Art courses in pointing and making and more.
+            </p>
+            <div class="float-right mt-2.5">
+              <button class="like-btn">🤍</button>
+              <span class="like-count">0</span>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded shadow hover:shadow-lg">
+            <h4 class="text-xl font-bold mb-2">Art</h4>
+            <p class="text-gray-600">
+              Art courses in pointing and making and more.
+            </p>
+            <div class="float-right mt-2.5">
+              <button class="like-btn">🤍</button>
+              <span class="like-count">0</span>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded shadow hover:shadow-lg">
+            <h4 class="text-xl font-bold mb-2">Art</h4>
+            <p class="text-gray-600">
+              Art courses in pointing and making and more.
+            </p>
+            <div class="float-right mt-2.5">
+              <button class="like-btn">🤍</button>
+              <span class="like-count">0</span>
+            </div>
+          </div>
+        </div>
+        <button
+          class="bg-blue-700 text-white px-6 py-3 rounded hover:bg-blue-800 transition mt-4"
+        >
+          More...
+        </button>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-semibold mb-4">Contact Us</h3>
+        <p class="text-gray-600 mb-6">Have questions? Reach out today.</p>
+        <div>
+          <i
+            class="text-blue-700 px-2 fab hover:text-blue-800 fa-facebook text-2xl"
+          ></i>
+          <i
+            class="text-blue-700 px-2 fab hover:text-blue-800 fa-youtube text-2xl"
+          ></i>
+          <i
+            class="text-blue-700 px-2 fab hover:text-blue-800 fa-instagram text-2xl"
+          ></i>
+        </div>
+        <a href="mailto:info@edusmart.com" class="text-blue-700 underline"
+          >info@sharifi.com</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white py-4 px-4 text-center">
+      <h1 class="text-2xl">Sharifi High School</h1>
+      <div class="flex justify-evenly py-4 flex-wrap">
+        <div><img src="../public/images/shape-1.png" alt="" /></div>
+        <div>
+          <ul>
+            <li class="pb-1.5"><a href="#home">Home</a></li>
+            <li class="pb-1.5"><a href="#home">About</a></li>
+            <li class="pb-1.5"><a href="#home">Courses</a></li>
+            <li class="pb-1.5"><a href="#home">Classes</a></li>
+            <li class="pb-1.5"><a href="#home">Contact</a></li>
+            <li class="pb-1.5"><a href="#home">Get Certificate</a></li>
+            <li class="pb-1.5"><a href="#home">For Teachers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-[20px]">Follow Us</h1>
+          <form class="pt-8">
+            <input
+              type="text"
+              placeholder="Enter your email address"
+              required
+              class="border-[2px] border-white outline-0 rounded-[4px] text-center p-[3px] hover:bg-blue-800"
+            />
+            <button
+              class="border-[2px] border-white rounded-[4px] p-[3px] hover:cursor-pointer hover:bg-blue-800"
+              title="Send"
+            >
+              Submit
+            </button>
+          </form>
+          <div class="pt-5">
+            <i
+              class="text-2xl hover:text-blue-800 hover:cursor-pointer fab fa-facebook"
+            ></i>
+            <i
+              class="text-2xl hover:text-blue-800 hover:cursor-pointer fab fa-instagram"
+            ></i>
+            <i
+              class="text-2xl hover:text-blue-800 hover:cursor-pointer fab fa-twitter"
+            ></i>
+            <i
+              class="text-2xl hover:text-blue-800 hover:cursor-pointer fab fa-youtube"
+            ></i>
+          </div>
+        </div>
+      </div>
+
+      <p>&copy; 2025 Sharifi High School. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
