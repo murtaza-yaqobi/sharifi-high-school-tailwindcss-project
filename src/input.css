@@ -1,4 +1,13 @@
 @import "tailwindcss";
-@theme{
-    --font-inter: "inter";
+@theme {
+  --font-inter: "inter";
+  --color-formcolor: rgba(255, 255, 255, 0.6);
+}
+@layer utilities {
+  :root {
+    --svg-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1408' height='548' preserveAspectRatio='none' viewBox='0 0 1408 548'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1042%26quot%3b)' fill='none'%3e%3crect width='1408' height='548' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1043%26quot%3b)'%3e%3c/rect%3e%3cpath d='M 0%2c105 C 40.4%2c89.2 121.2%2c17.2 202%2c26 C 282.8%2c34.8 323.2%2c150.4 404%2c149 C 484.8%2c147.6 525.2%2c13.4 606%2c19 C 686.8%2c24.6 727.2%2c169.2 808%2c177 C 888.8%2c184.8 929.2%2c61.6 1010%2c58 C 1090.8%2c54.4 1132.4%2c161.6 1212%2c159 C 1291.6%2c156.4 1368.8%2c67.8 1408%2c45L1408 548L0 548z' fill='rgba(5%2c 22%2c 179%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c236 C 56.4%2c253.2 169.2%2c328.2 282%2c322 C 394.8%2c315.8 451.2%2c201.2 564%2c205 C 676.8%2c208.8 733.2%2c330.6 846%2c341 C 958.8%2c351.4 1015.6%2c258.6 1128%2c257 C 1240.4%2c255.4 1352%2c317.8 1408%2c333L1408 548L0 548z' fill='rgba(2%2c 8%2c 202%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c380 C 21.8%2c411.8 65.4%2c540.6 109%2c539 C 152.6%2c537.4 174.4%2c372.2 218%2c372 C 261.6%2c371.8 283.4%2c527 327%2c538 C 370.6%2c549 392.4%2c434.4 436%2c427 C 479.6%2c419.6 501.4%2c501 545%2c501 C 588.6%2c501 610.4%2c418 654%2c427 C 697.6%2c436 719.4%2c540.8 763%2c546 C 806.6%2c551.2 828.4%2c460.8 872%2c453 C 915.6%2c445.2 937.4%2c507.2 981%2c507 C 1024.6%2c506.8 1046.4%2c450.8 1090%2c452 C 1133.6%2c453.2 1155.4%2c528.6 1199%2c513 C 1242.6%2c497.4 1266.2%2c373.8 1308%2c374 C 1349.8%2c374.2 1388%2c486 1408%2c514L1408 548L0 548z' fill='rgba(13%2c 43%2c 186%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1042'%3e%3crect width='1408' height='548' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.27%25' y1='139.23%25' x2='84.73%25' y2='-39.23%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1043'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 29%2c 227%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  }
+  .bg-svg {
+    background-image: var(--svg-bg);
+  }
 }

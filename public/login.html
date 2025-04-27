@@ -1,81 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="../src/output.css" />
-    <link
-      rel="stylesheet"
-      href="../fontawesome-free-5.15.4-web/css/all.min.css"
-    />
-  </head>
-  <body class="bg-blue-700">
-    <section class="w-full h-screen flex justify-center items-center">
-      <form class="h-[400px] w-[40%] px-24 py-[20px]">
-        <div>
-          <input
-            class="w-[90%] border font-medium text-white border-gray-300 outline-0 pl-[6px] rounded-[6px] p-[3px] mb-[18px]"
-            type="text"
-            placeholder="Enter your name"
-            title="Your Name"
-            required
-          />
-          <input
-            class="w-[90%] font-medium text-white border border-gray-300 outline-0 pl-[6px] rounded-[6px] p-[3px] mb-[18px]"
-            type="text"
-            placeholder="Enter your father name"
-            title="Your Father Name"
-            required
-          />
-          <input
-            class="w-[90%] border font-medium text-white border-gray-300 outline-0 pl-[6px] rounded-[6px] p-[3px] mb-[18px]"
-            type="text"
-            placeholder="Enter your last name"
-            title="Your Last Name"
-            required
-          />
-          <input
-            class="w-[90%] border font-medium text-white border-gray-300 outline-0 pl-[6px] rounded-[6px] p-[3px] mb-[18px]"
-            type="email"
-            placeholder="Enter your Email"
-            title="Your Eamil Address"
-            required
-          />
-          <input
-            class="w-[90%] border font-medium text-white border-gray-300 outline-0 pl-[6px] rounded-[6px] p-[3px] mb-[18px]"
-            type="password"
-            placeholder="Enter your Password"
-            title="Your Password"
-            required
-          />
-          <div>
-            <input
-              class="w-[45%] border font-medium text-white border-gray-300 outline-0 pl-[6px] rounded-[6px] p-[3px] mb-[18px]"
-              type="number"
-              placeholder="Your Grade"
-              title="Your Grade"
-              required
-            />
-            <input
-              class="w-[45%] border font-medium text-white border-gray-300 outline-0 pl-[6px] rounded-[6px] p-[3px] mb-[18px]"
-              type="number"
-              placeholder="Enter your age"
-              title="Your Age"
-              required
-            />
-          </div>
-          <p class="text-white text-[16px] mb-[6px]">
-            By continuing, you agree that the above captured personal data is
-            accurate.
-          </p>
-          <button
-            class="bg-blue-600 cursor-pointer hover:bg-blue-800 font-bold text-white w-[60%] rounded-[6px] p-2"
-          >
-            Continue
-          </button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+<body>
+  <div class="lg:h-screen h-[70vh] lg:my-auto md:w-[70%] bg-[url(../public/images/courses-1.jpg)] bg-cover sm:w-[90%] lg:w-[40%] my-22  mx-auto flex justify-center items-center">
+    <form class="lg:h-[75vh] h-[65vh] w-[90vh] py-3 my-auto lg:w-[75vh] bg-formcolor flex flex-col items-center lg:py-6 lg:gap-4 rounded-[4px]">
+        <i class="fas fa-user text-3xl bg-white p-4 rounded-full"></i>
+        <input class="lg:w-[70vh] md:w-[60vh] w-[38vh] lg:h-[7vh] h-[7vh] focus:rounded-2xl border-0 border-b border-b-black outline-0 px-2 focus:border-2 focus:border-blue-500" type="email" placeholder="Enter Email">
+        <input class="lg:w-[70vh] md:w-[60vh] w-[38vh] lg:h-[7vh] h-[7vh] focus:rounded-2xl border-0 border-b border-b-black outline-0 px-2 focus:border-2 focus:border-blue-500" type="password" placeholder="Enter Password">
+        <div class="flex flex-row justify-between w-full lg:my-auto my-4 lg:px-8 md:px-12 px-13">
+            <div class="flex">
+                <input type="checkbox">
+                <p>Remember me</p>
+            </div>
+            <div>
+                <a class="text-blue-300" href="index.html">Forgot Password</a>
+            </div>
         </div>
-      </form>
-    </section>
-  </body>
+        <a href="index.html"></a><button class="lg:w-[70vh] md:w-[60vh] w-[38vh] h-[7vh] text-xl bg-blue-700 rounded-2xl text-white hover:bg-blue-400 lg:h-[7vh]">Login</button></a>
+        <p class="lg:my-auto my-4">or Login with</p>
+        <div class="lg:space-x-1 text-xl">
+            <i class="fab bg-white hover:cursor-pointer text-black p-3 rounded-full fa-facebook"></i>
+            <i class="fab bg-white hover:cursor-pointer text-black p-3 rounded-full fa-twitter"></i>
+            <i class="fab bg-white hover:cursor-pointer text-black p-3 rounded-full fa-google-plus"></i>
+            <i class="fab bg-white hover:cursor-pointer text-black p-3 rounded-full fa-instagram"></i>
+            <i class="fab bg-white hover:cursor-pointer text-black p-3 rounded-full fa-linkedin-in"></i>
+        </div>
+    </form>
+  </div>
+</body>
 </html>

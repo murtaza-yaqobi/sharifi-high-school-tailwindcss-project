@@ -4,93 +4,326 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-    <link rel="stylesheet" href="../src/output.css" />
     <link
       rel="stylesheet"
       href="../fontawesome-free-5.15.4-web/css/all.min.css"
     />
     <script src="app.js" defer></script>
+    <link rel="stylesheet" href="../src/output.css" />
   </head>
-  <body>
-    <section>
-      <!-- Header -->
-      <header
-        class="bg-blue-700 w-full z-50 text-white shadow-md fixed top-0 right-0"
-      >
-        <div
-          class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
-        >
-          <h1 class="text-xl font-bold" title="Sharifi High School">
-            Sharifi High School
-          </h1>
-          <nav class="hidden md:flex space-x-6">
-            <a href="#home" class="hover:underline">Home</a>
-            <a href="#about" class="hover:underline">About</a>
-            <a href="#courses" class="hover:underline">Courses</a>
-            <a href="#classes" class="hover:underline">Classes</a>
-            <a href="#contact" class="hover:underline">Contact</a>
-            <a href="#user"><i class="fas fa-user-circle text-[30px]"></i></a>
-          </nav>
-          <button id="menu-btn" class="md:hidden focus:outline-none">
-            <i class="fas fa-bars text-2xl"></i>
-          </button>
-        </div>
-      </header>
+  <body class="font-semibold text-gray-800">
+    <!-- our project with tailwindcss and javascript start for sharifi high school -->
+    <!-- Header start-->
+    <header
+      class="bg-blue-700 w-full z-50 text-white shadow-md fixed top-0 right-0"
+    >
       <div
-        id="mobile-menu"
-        class="hidden h-screen w-[20%] bg-blue-700 text-white fixed top-0 left-0 pt-16"
+        class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
       >
-        <ul class="pl-7 pt-7">
+        <h1 class="text-2xl font-bold uppercase" title="Sharifi High School">
+          <a href="#">Sharifi High School</a>
+        </h1>
+        <nav class="hidden md:flex space-x-6">
+          <a href="index.html" class="hover:underline hover:text-black">Home</a>
+          <a href="about.html" class="font-bold underline text-black">About</a>
+          <a href="course.html" class="hover:underline hover:text-black"
+            >Courses</a
+          >
+          <a href="contact.html" class="hover:underline hover:text-black"
+            >Contact</a
+          >
+        </nav>
+        <a href="#"
+          ><button
+            class="p-[6px] md:block hidden bg-blue-800 hover:bg-blue-900 hover:cursor-pointer focus:border-[2px] focus:border-blue-300"
+          >
+            Jion Us
+          </button></a
+        >
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden">
+        <ul class="pl-7 pt-3">
           <li>
-            <a href="#user"
-              ><i class="pl-8 fas fa-user-circle text-4xl" title="User"></i
-            ></a>
-            <h4 class="ml-8">User</h4>
+            <a href="index.html" class="block py-2 hover:underline">Home</a>
           </li>
           <li>
-            <a href="#home" class="block py-2 hover:underline">Home</a>
-          </li>
-          <li><a href="#about" class="block py-2 hover:underline">About</a></li>
-          <li>
-            <a href="#courses" class="block py-2 hover:underline">Courses</a>
-          </li>
-          <li>
-            <a href="#classes" class="block py-2 hover:underline">Classes</a>
+            <a
+              href="about.html"
+              class="block py-2 text-black underline font-bold"
+              >About</a
+            >
           </li>
           <li>
-            <a href="#contact" class="block py-2 hover:underline">Contact</a>
+            <a href="course.html" class="block py-2 hover:underline">Courses</a>
+          </li>
+          <li>
+            <a href="contact.html" class="block py-2 hover:underline"
+              >Contact</a
+            >
           </li>
         </ul>
       </div>
-      <!-- about section start -->
-      <div class="py-16 bg-blue-50 h-screen">
-        <div class="flex justify-center">
-          <h1 class="text-3xl font-medium mt-3">————— About Us —————</h1>
-        </div>
+    </header>
+    <div
+      class="hidden h-screen w-[20%] bg-blue-700 text-white fixed top-0 left-0 pt-16"
+    ></div>
 
-        <div class="flex justify-between w-[100%]">
-          <div
-            class="px-14 before:content-['\1F441'] before:text-black before:w-full before:h-full relative before:absolute before:z-50 before:text-3xl before:top-[90%] before:left-[50%] before:translate-[-50%] before:hidden hover:opacity-20 hover:before:opacity-100 hover:before:block"
-          >
-            <a class="w-96 h-96" href="../public/images/school.JPG"
-              ><img
-                src="../public/images/school.JPG"
-                alt="school"
-                class="h-96 rounded-[4px] mt-[30px]"
-            /></a>
-          </div>
-          <p class="mt-[50px] ml-[18px]">
-            Sharifi High School is a premier school committed to academic
-            excellence and personal growth. Our mission is to nurture
-            creativity, curiosity, and lifelong learning in every student.
-            Sharifi High School is a premier school committed to academic
-            excellence and personal growth. Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Quae at, excepturi corrupti sint
-            provident quod quasi alias fugit numquam nulla quia fuga nemo iusto
-            accusamus, delectus ipsum quis, animi dolor?
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="bg-blue-50 py-[110px] bg-[url(../public/images/download.jpg)] bg-cover"
+    >
+      <div class="max-w-6xl mx-auto text-start px-4">
+        <h2 class="text-[55px] font-bold text-blue-800 mb-8">About Us</h2>
+      </div>
+      <div class="max-w-6xl text-white text-2xl mx-auto text-start px-5">
+        <a href="index.html">Home</a> /
+        <a href="about.html">About Us</a>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section class="bg-white py-16 px-14">
+      <h3 class="text-3xl font-semibold mb-10 text-center">——— About Us ———</h3>
+      <div class="flex flex-wrap justify-center gap-9">
+        <div
+          class="bg-blue-50 hover:cursor-pointer p-10 hover:bg-blue-400 hover:text-white hover:scale-110 h-64 w-64 text-center shadow hover:shadow-lg"
+        >
+          <i class="fas fa-graduation-cap text-blue-700 text-5xl"></i>
+          <h1 class="mt-3 text-[19px] font-bold">Skilled Instructors</h1>
+          <p class="mt-1.5">
+            Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
+            diam
+          </p>
+        </div>
+        <div
+          class="bg-blue-50 hover:bg-blue-400 hover:text-white hover:cursor-pointer hover:scale-110 p-10 h-64 w-64 text-center shadow hover:shadow-lg"
+        >
+          <i class="fas fa-home text-blue-700 text-5xl"></i>
+          <h1 class="mt-3 text-[19px] font-bold">Home Projects</h1>
+          <p class="mt-1.5">
+            Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
+            diam
+          </p>
+        </div>
+        <div
+          class="bg-blue-50 hover:bg-blue-400 hover:text-white hover:cursor-pointer hover:scale-110 p-10 h-64 w-64 text-center shadow hover:shadow-lg"
+        >
+          <i class="fas fa-globe text-blue-700 text-5xl"></i>
+          <h1 class="mt-3 text-[19px] font-bold">Online Classes</h1>
+          <p class="mt-1.5">
+            Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
+            diam
+          </p>
+        </div>
+        <div
+          class="bg-blue-50 hover:bg-blue-400 hover:text-white hover:cursor-pointer hover:scale-110 p-10 h-64 w-64 text-center shadow hover:shadow-lg"
+        >
+          <i class="fas fa-book-open text-blue-700 text-5xl"></i>
+          <h1 class="mt-3 text-[19px] font-bold">Book Library</h1>
+          <p class="mt-1.5">
+            Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
+            diam
           </p>
         </div>
       </div>
+      <div>
+        <section id="about" class="py-16 bg-white">
+          <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="md:grid md:grid-rows-1 md:grid-cols-1">
+              <div class="md:grid md:grid-rows-1 md:grid-cols-2">
+                <div>
+                  <img
+                    src="../public/images/about.jpg"
+                    alt="about section"
+                    title="About Section"
+                  />
+                </div>
+                <div class="mx-4 py-8">
+                  <h1 class="text-5xl text-blue-900">
+                    First Choice For Online Education Anywhere
+                  </h1>
+                  <p class="text-[15px] mt-[45px] text-gray-700">
+                    This project is about a school in this project only use
+                    tailwindcss and javascript and it design by
+                    <strong>Murtaza Yaqobi</strong> and
+                    <strong>Ali Reza Nazari</strong>. Diam dolor diam ipsum et,
+                    tempor voluptua sit consetetur sit. Aliquyam diam amet diam
+                    et eos sadipscing labore. Clita erat ipsum et lorem et sit,
+                    sed stet no labore lorem sit. Sanctus clita duo justo et
+                    tempor consetetur takimata eirmod, dolores takimata
+                    consetetur invidunt magna dolores aliquyam dolores dolore.
+                    Amet erat amet et magna
+                  </p>
+                  <div
+                    class="flex justify-items-center text-white font-bold mt-11"
+                  >
+                    <div class="bg-green-700 p-1.5 h-32 w-36 pt-3">
+                      <h1 data-target="512" class="text-3xl mb-3">0</h1>
+                      <h2 class="mt-2 uppercase">Available Subjects</h2>
+                    </div>
+                    <div class="bg-blue-700 p-1.5 h-32 w-36 pt-3">
+                      <h1 data-target="266" class="text-3xl mb-3">0</h1>
+                      <h2 class="mt-2 uppercase">Online Courses</h2>
+                    </div>
+                    <div class="bg-yellow-700 p-1.5 h-32 w-36 pt-3">
+                      <h1 data-target="705" class="text-3xl mb-3">0</h1>
+                      <h2 class="mt-2 uppercase">Skilled Instructors</h2>
+                    </div>
+                    <div class="bg-purple-700 p-1.5 h-32 w-[144px] pt-3">
+                      <h1 data-target="167" class="text-3xl mb-3">0</h1>
+                      <h2 class="mt-2 uppercase">Happy Students</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div>
+        <h3 class="text-3xl font-semibold mb-10 text-center">
+          ——— Meet our Teachers ———
+        </h3>
+        <div class="flex flex-wrap justify-center gap-9">
+          <div
+            class="bg-blue-50 hover:scale-110 hover:cursor-pointer h-[370px] w-64 text-center shadow hover:shadow-lg"
+          >
+            <img
+              src="../public/images/team-1.jpg"
+              alt=""
+              class="hover:opacity-40"
+            />
+
+            <div class="bg-blue-50 mt-3.5">
+              <i class="text-2xl fab fa-facebook"></i>
+              <i class="text-2xl fab fa-linkedin"></i>
+              <i class="text-2xl fab fa-instagram"></i>
+            </div>
+            <h1 class="mt-2 text-[19px] font-bold">Instructors</h1>
+            <p class="mt-1.5">Designation</p>
+          </div>
+          <div
+            class="bg-blue-50 hover:scale-110 hover:cursor-pointer h-[370px] w-64 text-center shadow hover:shadow-lg"
+          >
+            <img
+              src="../public/images/team-2.jpg"
+              class="hover:opacity-40"
+              alt=""
+            />
+
+            <div class="bg-blue-50 mt-3.5">
+              <i class="text-2xl fab fa-facebook"></i>
+              <i class="text-2xl fab fa-linkedin"></i>
+              <i class="text-2xl fab fa-instagram"></i>
+            </div>
+            <h1 class="mt-2 text-[19px] font-bold">Instructors</h1>
+            <p class="mt-1.5">Designation</p>
+          </div>
+          <div
+            class="bg-blue-50 hover:scale-110 hover:cursor-pointer h-[370px] w-64 text-center shadow hover:shadow-lg"
+          >
+            <img
+              src="../public/images/team-3.jpg"
+              class="hover:opacity-40"
+              alt=""
+            />
+            <div class="bg-blue-50 mt-3.5">
+              <i class="text-2xl fab fa-facebook"></i>
+              <i class="text-2xl fab fa-linkedin"></i>
+              <i class="text-2xl fab fa-instagram"></i>
+            </div>
+            <h1 class="mt-2 text-[19px] font-bold">Instructors</h1>
+            <p class="mt-1.5">Designation</p>
+          </div>
+          <div
+            class="bg-blue-50 hover:scale-110 hover:cursor-pointer h-[370px] w-64 text-center shadow hover:shadow-lg"
+          >
+            <img
+              src="../public/images/team-4.jpg"
+              class="hover:opacity-40"
+              alt=""
+            />
+            <div class="bg-blue-50 mt-3.5">
+              <i class="text-2xl fab fa-facebook"></i>
+              <i class="text-2xl fab fa-linkedin"></i>
+              <i class="text-2xl fab fa-instagram"></i>
+            </div>
+            <h1 class="mt-2 text-[19px] font-bold">Instructors</h1>
+            <p class="mt-1.5">Designation</p>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="bg-svg bg-cover text-white py-4 px-4 text-center">
+      <h1 class="text-3xl">Sharifi High School</h1>
+      <div class="p-9">
+        <div class="mb-7">
+          <i
+            class="hover:cursor-pointer hover:text-blue-300 ml-1.5 text-3xl fab fa-facebook"
+          ></i>
+          <i
+            class="hover:cursor-pointer hover:text-blue-300 ml-1.5 text-3xl fab fa-linkedin"
+          ></i>
+          <i
+            class="hover:cursor-pointer hover:text-blue-300 ml-1.5 text-3xl fab fa-instagram"
+          ></i>
+          <i
+            class="hover:cursor-pointer hover:text-blue-300 ml-1.5 text-3xl fab fa-youtube"
+          ></i>
+        </div>
+        <div>
+          <ul class="flex justify-center">
+            <li>
+              <a
+                class="hover:cursor-pointer hover:border-b-[2px] mr-3 text-2xl"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:cursor-pointer hover:border-b-[2px] mr-3 text-2xl"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:cursor-pointer hover:border-b-[2px] mr-3 text-2xl"
+                href="#"
+                >Course</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="hover:cursor-pointer hover:border-b-[2px] mr-3 text-2xl"
+                href="#"
+                >Contsct</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <br />
+      <div class="flex justify-center gap-48">
+        <p class="text-start">
+          &copy; 2025 Sharifi High School. All rights reserved.
+        </p>
+        <p>
+          Design By
+          <a class="border-b font-bold" href="https://hazarasite.com"
+            >Hazara_Site</a
+          >
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

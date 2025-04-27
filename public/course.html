@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course</title>
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body class="font-semibold text-gray-800">
+    <!-- our project with tailwindcss and javascript start for sharifi high school -->
+    <!-- Header start-->
+    <header
+      class="bg-blue-700 w-full z-50 text-white shadow-md fixed top-0 right-0"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold uppercase" title="Sharifi High School">
+          <a href="#">Sharifi High School</a>
+        </h1>
+        <nav class="hidden md:flex space-x-6">
+          <a href="index.html" class="hover:underline hover:text-black">Home</a>
+          <a href="about.html" class="hover:underline hover:text-black"
+            >About</a
+          >
+          <a href="course.html" class="underline text-black font-bold"
+            >Courses</a
+          >
+          <a href="contact.html" class="hover:underline hover:text-black"
+            >Contact</a
+          >
+        </nav>
+        <a href="#"
+          ><button
+            class="p-[6px] md:block hidden bg-blue-800 hover:bg-blue-900 hover:cursor-pointer focus:border-[2px] focus:border-blue-300"
+          >
+            Jion Us
+          </button></a
+        >
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden">
+        <ul class="pl-7 pt-3">
+          <li>
+            <a href="index.html" class="block py-2 hover:underline">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="block py-2 hover:underline">About</a>
+          </li>
+          <li>
+            <a
+              href="course.html"
+              class="block py-2 font-bold text-black underline"
+              >Courses</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="block py-2 hover:underline"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div
+      class="hidden h-screen w-[20%] bg-blue-700 text-white fixed top-0 left-0 pt-16"
+    ></div>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="bg-blue-50 py-[110px] bg-[url(../public/images/download.jpg)] bg-cover"
+    >
+      <div class="max-w-6xl mx-auto text-start px-4">
+        <h2 class="text-[55px] font-bold text-blue-800 mb-8">Course</h2>
+      </div>
+      <div class="max-w-6xl text-white text-2xl mx-auto text-start px-5">
+        <a href="index.html">Home</a> /
+        <a href="course.html">Course</a>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-16 bg-blue-50">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-semibold mb-10">——— Our Courses ———</h3>
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="bg-white p-2 rounded shadow hover:shadow-lg">
+            <img src="../public/images/courses-1.jpg" alt="" />
+            <h4 class="text-xl font-bold mb-2">Computer</h4>
+            <p class="text-gray-600">
+              Computer lab for office packge programming and more.
+            </p>
+            <div class="float-right mt-2.5">
+              <button class="like-btn">🤍</button>
+              <span class="like-count">0</span>
+            </div>
+          </div>
+          <div class="bg-white p-2 rounded shadow hover:shadow-lg">
+            <img src="../public/images/courses-2.jpg" alt="" />
+            <h4 class="text-xl font-bold mb-2">Mathematics</h4>
+            <p class="text-gray-600">
+              Problem-solving with real-world applications and more.
+            </p>
+            <div class="float-right mt-2.5">
+              <button class="like-btn">🤍</button>
+              <span class="like-count">0</span>
+            </div>
+          </div>
+          <div class="bg-white p-2 rounded shadow hover:shadow-lg">
+            <img src="../public/images/courses-3.jpg" alt="" />
+            <h4 class="text-xl font-bold mb-2">Languages</h4>
+            <p class="text-gray-600">
+              Courses in English, Spanish, French, Persian and more.
+            </p>
+            <div class="float-right mt-2.5">
+              <button class="like-btn">🤍</button>
+              <span class="like-count">0</span>
+            </div>
+          </div>
+          <div class="bg-white p-2 rounded shadow hover:shadow-lg">
+            <img src="../public/images/courses-4.jpg" alt="Art & Culture" />
+            <h4 class="text-xl font-bold mb-2">Art</h4>
+            <p class="text-gray-600">
+              Art courses in pointing and making and more.
+            </p>
+            <div class="float-right mt-2.5">
+              <button class="like-btn">🤍</button>
+              <span class="like-count">0</span>
+            </div>
+          </div>
+          <div class="bg-white p-2 rounded shadow hover:shadow-lg">
+            <img src="../public/images/courses-5.jpg" alt="" />
+            <h4 class="text-xl font-bold mb-2">Programming</h4>
+            <p class="text-gray-600">
+              Art courses in pointing and making and more.
+            </p>
+            <div class="float-right mt-2.5">
+              <button class="like-btn">🤍</button>
+              <span class="like-count">0</span>
+            </div>
+          </div>
+          <div class="bg-white p-2 rounded shadow hover:shadow-lg">
+            <img src="../public/images/courses-6.jpg" alt="" />
+            <h4 class="text-xl font-bold mb-2">Trading</h4>
+            <p class="text-gray-600">
+              Art courses in pointing and making and more.
+            </p>
+            <div class="float-right mt-2.5">
+              <button class="like-btn">🤍</button>
+              <span class="like-count">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- other course section -->
+    <section class="bg-white px-16 py-16">
+      <h3 class="text-3xl font-semibold mb-10 mt-10 text-center">
+        ——— Our Popular Courses ———
+      </h3>
+      <div class="flex justify-center flex-wrap gap-7">
+        <div class="bg-blue-50 h-[490px] w-96">
+          <img src="../public/images/other-course-1.jpg" alt="" />
+          <div class="px-8">
+            <div class="flex justify-between">
+              <p><i class="text-blue-700 fas fa-users"></i> 25 Students</p>
+              <p><i class="text-blue-700 fas fa-clock"></i> 01h 30m</p>
+            </div>
+            <br />
+            <a href="#" class="text-2xl hover:text-blue-700 hover:underline"
+              >Web design & develovpment courses for biginnar</a
+            >
+            <br />
+            <br />
+            <p class="text-gray-300">————————————————————</p>
+            <div class="flex justify-between mt-8">
+              <p><i class="text-yellow-500 fas fa-star"></i> 4.5 (250)</p>
+              <p>$199</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-blue-50 h-[490px] w-96">
+          <img src="../public/images/other-course-2.jpg" alt="" />
+          <div class="px-8">
+            <div class="flex justify-between">
+              <p><i class="text-blue-700 fas fa-users"></i> 25 Students</p>
+              <p><i class="text-blue-700 fas fa-clock"></i> 01h 30m</p>
+            </div>
+            <br />
+            <a href="#" class="text-2xl hover:text-blue-700 hover:underline"
+              >Web design & develovpment courses for biginnar</a
+            >
+            <br />
+            <br />
+            <p class="text-gray-300">————————————————————</p>
+            <div class="flex justify-between mt-8">
+              <p><i class="text-yellow-500 fas fa-star"></i> 4.5 (250)</p>
+              <p>$199</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-blue-50 h-[490px] w-96">
+          <img src="../public/images/other-course-3.jpg" alt="" />
+          <div class="px-8">
+            <div class="flex justify-between">
+              <p><i class="text-blue-700 fas fa-users"></i> 25 Students</p>
+              <p><i class="text-blue-700 fas fa-clock"></i> 01h 30m</p>
+            </div>
+            <br />
+            <a href="#" class="text-2xl hover:text-blue-700 hover:underline"
+              >Web design & develovpment courses for biginnar</a
+            >
+            <br />
+            <br />
+            <p class="text-gray-300">————————————————————</p>
+            <div class="flex justify-between mt-8">
+              <p><i class="text-yellow-500 fas fa-star"></i> 4.5 (250)</p>
+              <p>$199</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-blue-50 h-[490px] w-96">
+          <img src="../public/images/other-course-4.jpg" alt="" />
+          <div class="px-8">
+            <div class="flex justify-between">
+              <p><i class="text-blue-700 fas fa-users"></i> 25 Students</p>
+              <p><i class="text-blue-700 fas fa-clock"></i> 01h 30m</p>
+            </div>
+            <br />
+            <a href="#" class="text-2xl hover:text-blue-700 hover:underline"
+              >Web design & develovpment courses for biginnar</a
+            >
+            <br />
+            <br />
+            <p class="text-gray-300">————————————————————</p>
+            <div class="flex justify-between mt-8">
+              <p><i class="text-yellow-500 fas fa-star"></i> 4.5 (250)</p>
+              <p>$199</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-blue-50 h-[490px] w-96">
+          <img src="../public/images/other-course-5.jpg" alt="" />
+          <div class="px-8">
+            <div class="flex justify-between">
+              <p><i class="text-blue-700 fas fa-users"></i> 25 Students</p>
+              <p><i class="text-blue-700 fas fa-clock"></i> 01h 30m</p>
+            </div>
+            <br />
+            <a href="#" class="text-2xl hover:text-blue-700 hover:underline"
+              >Web design & develovpment courses for biginnar</a
+            >
+            <br />
+            <br />
+            <p class="text-gray-300">————————————————————</p>
+            <div class="flex justify-between mt-8">
+              <p><i class="text-yellow-500 fas fa-star"></i> 4.5 (250)</p>
+              <p>$199</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-blue-50 h-[490px] w-96">
+          <img src="../public/images/other-course-6.jpg" alt="" />
+          <div class="px-8">
+            <div class="flex justify-between">
+              <p><i class="text-blue-700 fas fa-users"></i> 25 Students</p>
+              <p><i class="text-blue-700 fas fa-clock"></i> 01h 30m</p>
+            </div>
+            <br />
+            <a href="#" class="text-2xl hover:text-blue-700 hover:underline"
+              >Web design & develovpment courses for biginnar</a
+            >
+            <br />
+            <br />
+            <p class="text-gray-300">————————————————————</p>
+            <div class="flex justify-between mt-8">
+              <p><i class="text-yellow-500 fas fa-star"></i> 4.5 (250)</p>
+              <p>$199</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex justify-center items-center w-[30%] mx-auto mt-12 space-x-1 text-2xl"
+      >
+        <i
+          class="hover:bg-blue-700 fas fa-chevron-left bg-blue-50 py-5 px-5 hover:cursor-pointer"
+        ></i>
+        <p
+          class="hover:bg-blue-900 py-4 px-5 bg-blue-700 text-blue-50 hover:cursor-pointer"
+        >
+          1
+        </p>
+        <p class="bg-blue-50 hover:bg-blue-700 py-4 px-5 hover:cursor-pointer">
+          2
+        </p>
+        <p class="bg-blue-50 hover:bg-blue-700 py-4 px-5 hover:cursor-pointer">
+          3
+        </p>
+        <i
+          class="fas fa-chevron-right hover:bg-blue-700 bg-blue-50 py-5 px-5 hover:cursor-pointer"
+        ></i>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-svg bg-cover text-white py-4 px-4 text-center">
+      <h1 class="text-3xl">Sharifi High School</h1>
+      <div class="p-9">
+        <div class="mb-7">
+          <i
+            class="hover:cursor-pointer hover:text-blue-300 ml-1.5 text-3xl fab fa-facebook"
+          ></i>
+          <i
+            class="hover:cursor-pointer hover:text-blue-300 ml-1.5 text-3xl fab fa-linkedin"
+          ></i>
+          <i
+            class="hover:cursor-pointer hover:text-blue-300 ml-1.5 text-3xl fab fa-instagram"
+          ></i>
+          <i
+            class="hover:cursor-pointer hover:text-blue-300 ml-1.5 text-3xl fab fa-youtube"
+          ></i>
+        </div>
+        <div>
+          <ul class="flex justify-center">
+            <li>
+              <a
+                class="hover:cursor-pointer hover:border-b-[2px] mr-3 text-2xl"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:cursor-pointer hover:border-b-[2px] mr-3 text-2xl"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:cursor-pointer hover:border-b-[2px] mr-3 text-2xl"
+                href="#"
+                >Course</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:cursor-pointer hover:border-b-[2px] mr-3 text-2xl"
+                href="#"
+                >Classes</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:cursor-pointer hover:border-b-[2px] mr-3 text-2xl"
+                href="#"
+                >Contsct</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <br />
+      <div class="flex justify-center gap-48">
+        <p class="text-start">
+          &copy; 2025 Sharifi High School. All rights reserved.
+        </p>
+        <p>
+          Design By
+          <a class="border-b font-bold" href="https://hazarasite.com"
+            >Hazara_Site</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
