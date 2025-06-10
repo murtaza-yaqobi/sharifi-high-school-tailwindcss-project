@@ -86,7 +86,7 @@
         >
       </div>
       <div
-        class="h-screen  float-left flex flex-col absolute justify-center space-y-4 top-10 left-2"
+        class="h-screen float-left flex flex-col absolute justify-center space-y-4 top-10 left-2"
       >
         <button id="btn-top" class="opacity-50">
           <div
@@ -102,7 +102,10 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 bg-white">
+    <section
+      id="about"
+      class="py-16 bg-[url(../public/images/bg.png)] bg-cover"
+    >
       <div class="max-w-6xl mx-auto px-4 text-center">
         <h3 class="text-3xl font-semibold mb-4">——— About Us ———</h3>
         <div class="md:grid md:grid-rows-1 md:grid-cols-1">
@@ -151,7 +154,7 @@
           </div>
         </div>
       </div>
-     
+
       <div class="mt-11">
         <h3 class="text-3xl font-semibold mb-10 text-center">
           ——— Meet our Teachers ———
@@ -306,9 +309,12 @@
         </button>
       </div>
     </section>
+
     <!-- discount section-->
-    <div class="bg-white py-16 flex justify-center items-center text-center">
-      <form class="bg-blue-100 p-8">
+    <div
+      class="bg-[url(../public/images/bg.png)] bg-cover py-16 flex justify-center items-center text-center"
+    >
+      <section class="bg-blue-100 p-8">
         <h1 class="text-black text-4xl font-bold mb-6">
           30% Off For New Students
         </h1>
@@ -317,13 +323,14 @@
             class="p-2 h-[45px] mb-3 bg-blue-50 focus:border-[3px] w-[220px] focus:border-blue-200 outline-0"
             type="text"
             placeholder="Enter you name"
-            required
+            id="discountInputName"
+
           />
           <input
             class="p-2 h-[45px] mb-3 ml-3 bg-blue-50 focus:border-[3px] w-[220px] focus:border-blue-200 outline-0"
             type="email"
             placeholder="Enter your email"
-            required
+            id="discountInputEmail"
           />
         </div>
         <div>
@@ -338,12 +345,14 @@
             <option value="3">Course3</option>
           </select>
           <button
+          id="discountSignUpBtn"
             class="h-[45px] ml-3 bg-blue-800 hover:cursor-pointer hover:bg-blue-900 p-2 w-[220px] text-white"
           >
             Sign Up Now
           </button>
+          <h1 class="mt-2.5 text-[19px]" id="discountShowResult"></h1>
         </div>
-      </form>
+      </section>
     </div>
 
     <!-- Contact Section -->
@@ -426,76 +435,65 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-svg bg-cover text-white py-4 px-4 text-center">
-      <h1 class="text-3xl">Sharifi High School</h1>
-      <div class="p-9">
-        <div class="mb-7">
-          <i
-            class="hover:cursor-pointer hover:text-blue-300 ml-1.5 text-3xl fab fa-facebook"
-          ></i>
-          <i
-            class="hover:cursor-pointer hover:text-blue-300 ml-1.5 text-3xl fab fa-linkedin"
-          ></i>
-          <i
-            class="hover:cursor-pointer hover:text-blue-300 ml-1.5 text-3xl fab fa-instagram"
-          ></i>
-          <i
-            class="hover:cursor-pointer hover:text-blue-300 ml-1.5 text-3xl fab fa-youtube"
-          ></i>
-        </div>
-        <div>
-          <ul class="flex justify-center">
-            <li>
-              <a
-                class="hover:cursor-pointer hover:border-b-[2px] mr-3 text-2xl"
-                href="index.html"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                class="hover:cursor-pointer hover:border-b-[2px] mr-3 text-2xl"
-                href="#"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                class="hover:cursor-pointer hover:border-b-[2px] mr-3 text-2xl"
-                href="#"
-                >Course</a
-              >
-            </li>
+    <footer class="bg-svg bg-cover text-white py-4 px-4">
+      <div class="mb-16 mt-16">
+        <div class="flex justify-evenly flex-wrap mb-12">
+          <div class="md:w-[50%] sm:w-[80%]">
+            <h1 class="text-3xl mb-6 sm:text-center">Sharifi High School</h1>
+            <p class="mb-6">
+              Accusam nonumy and clita sed kasd eirmod elitr. Ipsum ea at et
+              diam est, tempor rebum rebum ipsum sit ea tempor stet consetetur
+              dolores. Justo stet diam ipsum lorem vero clita
+            </p>
+          </div>
+          <div>
+            <h1 class="text-2xl mb-6">Newsletter</h1>
 
-            <li>
-              <a
-                class="hover:cursor-pointer hover:border-b-[2px] mr-3 text-2xl"
-                href="contact.html"
-                >Contact</a
-              >
-            </li>
-          </ul>
+            <input
+              id="inputNewsLetter"
+              type="text"
+              placeholder="Your Email Address"
+              class="text-[18px] md:w-[400px] sm:w-[350px] p-3.5 bg-white text-gray-800 focus:outline-0"
+            />
+            <button
+              id="newsLetterBtn"
+              class="text-[18px] p-3.5 bg-green-700 text-white hover:cursor-pointer hover:bg-green-900"
+            >
+              Sign Up
+            </button>
+
+            <h1 id="massegNewsletter" class="text-center mt-2"></h1>
+          </div>
+        </div>
+        <div class="flex justify-evenly flex-wrap">
+          <div class="md:block lg:block hidden">
+            <h1 class="text-3xl mb-6">Get In Touch</h1>
+            <p class="mb-2">Hutqol street, Ghazni, Afghanistan</p>
+            <p class="mb-2">+93 796859121</p>
+            <p class="mb-2">sharifihighschool@gmail.com</p>
+          </div>
+          <div>
+            <h1 class="text-3xl mb-6">Our Courses</h1>
+            <p class="mb-2">Web Design</p>
+            <p class="mb-2">Apps Design</p>
+            <p class="mb-2">Marketing</p>
+            <p class="mb-2">Research</p>
+            <p class="mb-2">SEO</p>
+          </div>
+          <div>
+            <h1 class="text-3xl mb-6">Quick Links</h1>
+            <p class="mb-2">Privacy Policy</p>
+            <p class="mb-2">Terms & Condition</p>
+            <p class="mb-2">Regular FAQs</p>
+            <p class="mb-2">Help & Support</p>
+            <p class="mb-2">Contact</p>
+          </div>
         </div>
       </div>
       <hr />
-      <br />
-      <div class="flex justify-center gap-3">
-        <p class="text-start">
-          &copy; 2025 Sharifi High School. All rights reserved.
-          <p>
-            Design By
-            <a class="border-b font-bold" href="https://hazarasite.com"
-              >Hazara_Site</a
-            >
-          </p>
-        </p>
-        <div class="hidden  md:flex md:justify-end md:gap-5">
-          <a href="#">Privacy</a>
-          <a href="#">Tream</a>
-          <a href="#">FAQs</a>
-          <a href="#">Help</a>
-        </div>
-        
+      <div class="mt-4 md:flex md:justify-between flex-wrap px-14">
+        <h1>Copyright © 2025. All Rights Reserved.</h1>
+        <h1 class="md:block sm:hidden lg:block">Designed by Coding Team</h1>
       </div>
     </footer>
   </body>
